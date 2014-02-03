@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Orbit</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body >
+    <div class="container body-content">
+        <br/><br/>
+        <form role="form">
+            <div class="row">
+                <div class="col-md-7">
+                    <h2>Create your Carrier</h2>
+                    <div class="alert alert-info success">
+                        Enter the details of your Carrier below. 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row form-group">
+                <div class="col-md-4">
+                   <label>Carrier Name:</label>
+                   <input type="text" class="form-control input-block-level" data-bind="value: carrierName" />
+               </div>                    
+               <div class="col-md-3">
+                   <label>Url:</label>
+                   <input type="text" class="form-control input-block-level" data-bind="value: carrierUrl" />
+               </div>                                        
+           </div>
+           <div class="alert alert-danger" data-bind="visible: showError, text: errorMessage">
+            Some error message over here
+        </div>
+        <div class="row form-group">
+            <div class="col-md-7">
+                <button type="submit" class="btn btn-info" data-bind="click: save">Save and Continue!</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="../lib/jquery.js"></script>
+<script src="../lib/knockout.js"></script>
+<script src="js/index.js"></script>
+<script src="js/service.js"></script>
+</body>
+</html>

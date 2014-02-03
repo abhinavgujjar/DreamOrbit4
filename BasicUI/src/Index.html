@@ -1,0 +1,23 @@
+<html>
+<body>
+<h1>Tax Calculator</h1>
+<p>
+	Enter Income Details
+</p>
+<label>Name</label><input type="text"  />
+<label>Income</label><input type="number" data-bind="value: income"/>
+<label>Age</label><input type="number" data-bind="value: age" />
+
+
+<button data-bind="click: calculate">Calculate Tax!</button>
+
+<p>
+	<label>Result Tax for <span data-bind="text: income"></span> is:  </label><span data-bind="text: result">This is where the result will appear</span>
+</p>
+<script type="text/javascript" src="..\lib\jquery.js"></script>
+<script type="text/javascript" src="..\lib\knockout.js"></script>
+<script type="text/javascript" src="js\TaxCalculator.js"></script>
+<script type="text/javascript" src="js\index.js"></script>
+
+</body>
+</html>
